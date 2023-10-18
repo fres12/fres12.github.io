@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>SiCepat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ETS.css" />
+  </head>
+  <body>
+    <img class="background" src="background.jpeg" />
+    <ul class="nav fixed-top navbar-scrolled " id="navbar">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <img
+            src="sicepatlogo.png"
+            style="width: 21vw; height: fit-content; flex-shrink: 0"
+          />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">BERANDA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TENTANG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LAYANAN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PARTNER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col-5"></div>
+      <div class="col-7 pt-5 mt-5">
+        <p class="highlight mt-5 pt-3">
+          Pengiriman cepat dan mudah <br />#ketikasemuajadimudah
+        </p>
+        <button type="button" class="btn">PESAN LAYANAN</button>
+        <div class="pt-3 pl-3">
+          <img src="ap.png" class="mobile" />
+          <img src="gp.png" class="mobile" />
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    const navEl = document.querySelector(".nav");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 100) {
+        navEl.classList.remove("navbar-scrolled");
+      } else{
+        navEl.classList.add("navbar-scrolled");
+      }
+    });
+  </script>
+</html>

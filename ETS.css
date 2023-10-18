@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  z-index: -1;
+}
+.body {
+  font-family: "DM Sans", sans-serif;
+}
+p,
+a,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+.highlight {
+  font-size: 3.7vw;
+  font-weight: 500;
+  color: white;
+}
+.btn {
+  margin-top: 6vw;
+  background-color: white;
+  padding: 1.5vw 5vw;
+  font-size: 1.7vw;
+  border-radius: 4vw;
+  color: #b3181c;
+  font-weight: 600;
+}
+.mobile {
+  height: 3.2vw;
+}
+.nav {
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    color: aliceblue;
+    font-size: 1vw;
+    transition: all 1.5s ease;
+  }
+.navbar-scrolled {
+  background: linear-gradient(180deg, #ad1b1e 0%, #ad1b1e 100%);
+  box-shadow: 0px 4px 10px 2px rgba(100, 100, 100, 0.25);
+}
